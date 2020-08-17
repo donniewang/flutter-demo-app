@@ -7,34 +7,31 @@ import 'package:zdp/model/user_info.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-	runApp(ChangeNotifierProvider(
-		builder: (context) => UserInfoModel(),
-		child: ZdpApp(),
-	));
+  runApp(ChangeNotifierProvider(
+    builder: (context) => UserInfoModel(),
+    child: ZdpApp(),
+  ));
 }
 
 class ZdpApp extends StatelessWidget {
-	ZdpApp() {
-		final router = Router();
-		Routers.configureRoutes(router);
-		Application.router = router;
-	}
+  ZdpApp() {
+    final router = Router();
+    Routers.configureRoutes(router);
+    Application.router = router;
+  }
 
-	@override
-	Widget build(BuildContext context) {
-		return MaterialApp(
-			debugShowCheckedModeBanner: false,
-			onGenerateRoute: Application.router.generator,
-			title: 'ZDP-Demo',
-			theme: ThemeData(
-				primaryColor:Color(0xFFFB7E00)
-			),
-			localizationsDelegates: [
-				GlobalMaterialLocalizations.delegate,
-				GlobalWidgetsLocalizations.delegate,
-			],
-			locale: Locale('zh'),
-			
-		);
-	}
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: Application.router.generator,
+      title: 'ZDP-Demo',
+      theme: ThemeData(primaryColor: Color(0xFFFB7E00)),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      locale: Locale('zh'),
+    );
+  }
 }

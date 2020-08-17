@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class UserInfoModel with ChangeNotifier {
-
-    updateInfo() {
-        print("========================UserInfoModel updateInfo===================");
-        notifyListeners();
-    }
-    
+  updateInfo() {
+    print(
+        "========================UserInfoModel updateInfo===================");
+    notifyListeners();
+  }
 }

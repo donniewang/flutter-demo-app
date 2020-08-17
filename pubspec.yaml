@@ -66,10 +66,23 @@ flutter:
   assets:
     - images/agree.png
     - images/agree_act.png
+    - images/banner1.jpg
+    - images/banner2.jpg
+    - images/bid.png
+    - images/bid_act.png
+    - images/cars_icon.png
+    - images/daiban.png
+    - images/daiban_act.png
+    - images/hg.png
+    - images/home.png
+    - images/home_act.png
     - images/loginbg.jpg
     - images/logincodeicon.png
     - images/logininputicon.png
     - images/logo.png
+    - images/my.png
+    - images/my_act.png
+    - images/shijian.png
     - images/yiwenicon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
